@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Яндекс.Дом</title>
+    <meta name="next-head-count" content="3" />
+    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="stylesheet" href="./styles.css" data-n-g="" />
+  </head>
+  <body>
+    <div id="__next">
+      <header class="header">
+        <a href="/" class="header__logo" aria-label="Яндекс.Дом"></a
+        ><button
+          class="header__menu"
+          aria-expanded="false"
+          id="header-menu-button"
+        >
+          <span class="header__menu-text a11y-hidden">Открыть меню</span>
+        </button>
+        <ul class="header__links" id="header-menu">
+          <li class="header__item">
+            <a
+              class="header__link header__link_current"
+              href="/"
+              aria-current="page"
+              >Сводка</a
+            >
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/devices">Устройства</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/scripts">Сценарии</a>
+          </li>
+        </ul>
+      </header>
+      <main class="main">
+        <section class="section main__general">
+          <h2 class="section__title section__title-header section__main-title">
+            Главное
+          </h2>
+          <div class="hero-dashboard">
+            <div class="hero-dashboard__primary">
+              <h3 class="hero-dashboard__title">Привет, Геннадий!</h3>
+              <p class="hero-dashboard__subtitle">
+                Двери и окна закрыты, сигнализация включена.
+              </p>
+              <ul class="hero-dashboard__info">
+                <li class="hero-dashboard__item">
+                  <div class="hero-dashboard__item-title">Дома</div>
+                  <div class="hero-dashboard__item-details">
+                    +23<span class="a11y-hidden">°</span>
+                  </div>
+                </li>
+                <li class="hero-dashboard__item">
+                  <div class="hero-dashboard__item-title">За окном</div>
+                  <div class="hero-dashboard__item-details">
+                    +19<span class="a11y-hidden">°</span>
+                    <div
+                      class="hero-dashboard__icon hero-dashboard__icon_rain"
+                      role="img"
+                      aria-label="Дождь"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="hero-dashboard__schedule">
+              <li class="event">
+                <button class="event__button">
+                  <span
+                    class="event__icon event__icon_temp"
+                    role="img"
+                    aria-label="Температура"
+                  ></span>
+                  <h4 class="event__title">Philips Cooler</h4>
+                  <span class="event__subtitle">Начнет охлаждать в 16:30</span>
+                </button>
+              </li>
+              <li class="event">
+                <button class="event__button">
+                  <span
+                    class="event__icon event__icon_light"
+                    role="img"
+                    aria-label="Освещение"
+                  ></span>
+                  <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
+                  <span class="event__subtitle">Включится в 17:00</span>
+                </button>
+              </li>
+              <li class="event">
+                <button class="event__button">
+                  <span
+                    class="event__icon event__icon_light"
+                    role="img"
+                    aria-label="Освещение"
+                  ></span>
+                  <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
+                  <span class="event__subtitle">Включится в 17:00</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section main__scripts">
+          <h2 class="section__title section__title-header">
+            Избранные сценарии
+          </h2>
+          <ul class="event-grid">
+            <li class="event event_slim">
+              <button class="event__button">
+                <span
+                  class="event__icon event__icon_light2"
+                  role="img"
+                  aria-label="Освещение"
+                ></span>
+                <h4 class="event__title">
+                  Выключить весь свет в доме и во дворе
+                </h4>
+              </button>
+            </li>
+            <li class="event event_slim">
+              <button class="event__button">
+                <span
+                  class="event__icon event__icon_schedule"
+                  role="img"
+                  aria-label="Расписание"
+                ></span>
+                <h4 class="event__title">Я ухожу</h4>
+              </button>
+            </li>
+            <li class="event event_slim">
+              <button class="event__button">
+                <span
+                  class="event__icon event__icon_light2"
+                  role="img"
+                  aria-label="Освещение"
+                ></span>
+                <h4 class="event__title">Включить свет в коридоре</h4>
+              </button>
+            </li>
+            <li class="event event_slim">
+              <button class="event__button">
+                <span
+                  class="event__icon event__icon_temp2"
+                  role="img"
+                  aria-label="Температура"
+                ></span>
+                <h4 class="event__title">Набрать горячую ванну</h4>
+                <span class="event__subtitle">Начнётся в 18:00</span>
+              </button>
+            </li>
+            <li class="event event_slim">
+              <button class="event__button">
+                <span
+                  class="event__icon event__icon_temp2"
+                  role="img"
+                  aria-label="Температура"
+                ></span>
+                <h4 class="event__title">
+                  Сделать пол тёплым во всей квартире
+                </h4>
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section class="section main__devices">
+          <div class="section__title">
+            <h2 class="section__title-header">Избранные устройства</h2>
+            <select class="section__select" id="device-select">
+              <option value="all" selected="">Все</option>
+              <option value="kitchen">Кухня</option>
+              <option value="hall">Зал</option>
+              <option value="lights">Лампочки</option>
+              <option value="cameras">Камеры</option>
+            </select>
+            <ul role="tablist" class="section__tabs" id="device-tabs-list">
+              <li
+                role="tab"
+                aria-selected="false"
+                class="section__tab"
+                id="tab_all"
+                aria-controls="panel_all"
+              >
+                Все
+              </li>
+              <li
+                role="tab"
+                aria-selected="false"
+                class="section__tab"
+                id="tab_kitchen"
+                aria-controls="panel_kitchen"
+              >
+                Кухня
+              </li>
+              <li
+                role="tab"
+                aria-selected="false"
+                class="section__tab"
+                id="tab_hall"
+                aria-controls="panel_hall"
+              >
+                Зал
+              </li>
+              <li
+                role="tab"
+                aria-selected="false"
+                class="section__tab"
+                id="tab_lights"
+                aria-controls="panel_lights"
+              >
+                Лампочки
+              </li>
+              <li
+                role="tab"
+                aria-selected="false"
+                class="section__tab"
+                id="tab_cameras"
+                aria-controls="panel_cameras"
+              >
+                Камеры
+              </li>
+            </ul>
+          </div>
+          <div class="section__panel-wrapper" id="panel-wrapper">
+            <div
+              role="tabpanel"
+              class="section__panel section__panel_hidden"
+              aria-hidden="true"
+              id="panel_all"
+              aria-labelledby="tab_all"
+            >
+              <ul class="section__panel-list">
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">D-Link Omna 180 Cam</h4>
+                    <span class="event__subtitle">Включится в 17:00</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_temp"
+                      role="img"
+                      aria-label="Температура"
+                    ></span>
+                    <h4 class="event__title">Elgato Eve Degree Connected</h4>
+                    <span class="event__subtitle">Выключено до 17:00</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">
+                      LIFX Mini Day &amp; Dusk A60 E27
+                    </h4>
+                    <span class="event__subtitle">Включится в 17:00</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Philips Zhirui</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Philips Zhirui</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div
+              role="tabpanel"
+              class="section__panel section__panel_hidden"
+              aria-hidden="true"
+              id="panel_kitchen"
+              aria-labelledby="tab_kitchen"
+            >
+              <ul class="section__panel-list">
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Yeelight LED Smart Bulb</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_temp"
+                      role="img"
+                      aria-label="Температура"
+                    ></span>
+                    <h4 class="event__title">Elgato Eve Degree Connected</h4>
+                    <span class="event__subtitle">Выключено до 17:00</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div
+              role="tabpanel"
+              class="section__panel section__panel_hidden"
+              aria-hidden="true"
+              id="panel_hall"
+              aria-labelledby="tab_hall"
+            >
+              <ul class="section__panel-list">
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Philips Zhirui</h4>
+                    <span class="event__subtitle">Выключено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
+                    <span class="event__subtitle">Выключено</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div
+              role="tabpanel"
+              class="section__panel section__panel_hidden"
+              aria-hidden="true"
+              id="panel_lights"
+              aria-labelledby="tab_lights"
+            >
+              <ul class="section__panel-list">
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">D-Link Omna 180 Cam</h4>
+                    <span class="event__subtitle">Включится в 17:00</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">
+                      LIFX Mini Day &amp; Dusk A60 E27
+                    </h4>
+                    <span class="event__subtitle">Включится в 17:00</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Philips Zhirui</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div
+              role="tabpanel"
+              class="section__panel section__panel_hidden"
+              aria-hidden="true"
+              id="panel_cameras"
+              aria-labelledby="tab_cameras"
+            >
+              <ul class="section__panel-list">
+                <li class="event">
+                  <button class="event__button">
+                    <span
+                      class="event__icon event__icon_light2"
+                      role="img"
+                      aria-label="Освещение"
+                    ></span>
+                    <h4 class="event__title">Xiaomi Mi Air Purifier 2S</h4>
+                    <span class="event__subtitle">Включено</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="section__arrow" hidden="true"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="/">Помощь</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/">Обратная связь</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/">Разработчикам</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="/">Условия использования</a>
+        </li>
+      </ul>
+      <div class="footer__copyright">© 1997–2023 ООО «Яндекс»</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
