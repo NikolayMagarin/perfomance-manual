@@ -24,6 +24,16 @@ menuButton.addEventListener("click", (event) => {
   }
 });
 
+function multiplyCards() {
+  let items = document.querySelector("#panel_all ul").innerHTML;
+  for (let i = 0; i < 6; ++i) {
+    items = items + items;
+  }
+  document.querySelector("#panel_all ul").innerHTML = items;
+}
+
+multiplyCards();
+
 // -----
 const deviceSelect = document.getElementById("device-select");
 const tabs = document.querySelectorAll("#device-tabs-list li");
