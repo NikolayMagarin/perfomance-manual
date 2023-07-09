@@ -14,9 +14,13 @@ menuButton.addEventListener("click", (event) => {
   if (currentExpanded) {
     button.setAttribute("aria-expanded", "false");
     menu.classList.remove("header__links_opened");
+
+    document.querySelector(".header__menu-text").innerHTML = "Открыть меню";
   } else {
     button.setAttribute("aria-expanded", "true");
     menu.classList.add("header__links_opened");
+
+    document.querySelector(".header__menu-text").innerHTML = "Закрыть меню";
   }
 });
 
