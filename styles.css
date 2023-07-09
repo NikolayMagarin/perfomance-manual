@@ -243,7 +243,7 @@ html {
   display: flex;
   gap: 0.9375rem;
   height: 20.6875rem;
-  background: no-repeat 50% 50% url(./media/bg@2x.95ff43e3.jpg);
+  background: no-repeat 50% 50% url(./media/bg_2x.95ff43e3.avif);
   background-size: 1260px;
   border-radius: 1.25rem;
 }
@@ -253,7 +253,7 @@ html {
     gap: 1.25rem;
     height: auto;
     margin-bottom: 0.3125rem;
-    background-image: url(./media/bg@2x.95ff43e3.jpg);
+    background-image: url(./media/bg_2x.95ff43e3.avif);
   }
 }
 .hero-dashboard__primary {
