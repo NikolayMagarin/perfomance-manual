@@ -94,4 +94,4 @@ arrowButton.addEventListener("click", () => {
   }
 });
 
-selectTab("all");
+selectTab(new URLSearchParams(location.search).get("tab") || "all");
